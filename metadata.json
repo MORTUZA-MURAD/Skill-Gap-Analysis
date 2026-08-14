@@ -1,0 +1,6 @@
+{
+  "name": "Skill Gap Analysis",
+  "description": "Coaching Institute Management Website for JEE, NEET, SSC, Banking, Spoken English, and Computer courses.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
