@@ -83,7 +83,7 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ autoOpen }) => {
     if (!userMessage || loading) return;
 
     setInput('');
-    const updatedMessages = [...messages, { role: 'user', content: userMessage }];
+    const updatedMessages: Message[] = [...messages, { role: 'user', content: userMessage }];
     setMessages(updatedMessages);
     setFlow('normal');
     setLoading(true);
@@ -123,7 +123,7 @@ export const ChatWidget: React.FC<ChatWidgetProps> = ({ autoOpen }) => {
     if (loading) return;
     setFlow('normal');
     const assessmentMessage = 'Start Skill Assessment';
-    const updatedMessages = [...messages, { role: 'user', content: assessmentMessage }];
+    const updatedMessages: Message[] = [...messages, { role: 'user', content: assessmentMessage }];
     setMessages(updatedMessages);
     setLoading(true);
 
